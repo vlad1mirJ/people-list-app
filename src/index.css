@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/*
+  Main page
+*/
+
+h1 {
+  text-align: center;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search input {
+  padding: 0.5em;
+  width: 267px;
+  margin-bottom: 2em;
+}
+
+.all-users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+/*
+User Card
+*/
+
+.user-card {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  margin-right: 1em;
+}
+
+.card-info {
+  max-width: 150px;
+}
+
+.full-name {
+  font-size: 14px;
+}
+
+.job-title {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.more-details {
+  display: flex;
+  justify-content: center;
+}
+
+/*
+UserInfo
+*/
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info span {
+  font-weight: 700;
+}
+
+.comment-section {
+  width: 100%;
+  background-color: rgb(230, 230, 230);
+  padding: 3em;
+}
+
+#comment-input {
+  resize: none;
+  font-size: 1.1em;
+  border-radius: 3px;
+  border: none;
+  width: 100%;
+  padding: 0.5em 1.25em;
+  font-family: sans-serif;
+}
+
+.comments-display {
+  border-top: 1px solid black;
+  padding-top: 2em;
+  margin-top: 1em;
+}
+
+.comment {
+  background-color: rgb(168, 168, 168);
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+.back-arrow {
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+
+@media (max-width: 450px) {
+  .back-arrow {
+    top: 100px;
+  }
+}
+
+.back-arrow img {
+  width: 30px;
+  height: 30px;
+}
